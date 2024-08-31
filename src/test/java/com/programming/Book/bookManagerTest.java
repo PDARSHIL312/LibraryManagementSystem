@@ -38,13 +38,19 @@ class bookManagerTest {
         Calendar calendar = Calendar.getInstance();
         calendar.set(2003, Calendar.DECEMBER, 3);
         Date publishedDate = calendar.getTime();
-
-
         library.addBook("The SnowBall", "NoOne", "TATA", "12345", 0, 231, "English", publishedDate, false);
 
         assertFalse(library.getAllBooks().isEmpty(), "The library should not be empty after adding a book.");
-
         System.out.println(library.getAllBooks());
+    }
+
+    @Test
+    public void checkThatEntryDoneHavingAnyNullOrNotAndTheValidtion()
+    {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2003, Calendar.DECEMBER, 3);
+        Date publishedDate = calendar.getTime();
+        library.addBook("The-SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", publishedDate, false);
 
     }
 }
