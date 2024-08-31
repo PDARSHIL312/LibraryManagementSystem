@@ -35,7 +35,8 @@ class bookManagerTest {
         Calendar calendar = Calendar.getInstance();
         calendar.set(2003, Calendar.DECEMBER, 3);
         Date publishedDate = calendar.getTime();
-        library.addBook("The SnowBall", "NoOne", "TATA", "12345", 0, 231, "English", publishedDate, false);
+//        library.addBook("The SnowBall", "NoOne", "TATA", "12345", 0, 231, "English", publishedDate, false);
+        library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", publishedDate, false);
 
         assertFalse(library.getAllBooks().isEmpty(), "The library should not be empty after adding a book.");
         System.out.println(library.getAllBooks());
@@ -76,7 +77,26 @@ class bookManagerTest {
         library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", publishedDate, false);
     }
 
-//    @Test
+    @Test
+    // this test is for if we want to remove book and that is available in the Map
+    public void testRemoveBookSuccess() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2003, Calendar.DECEMBER, 3);
+        Date publishedDate = calendar.getTime();
+        library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", publishedDate, false);
+
+        library.removeBook("The SnowBall", "2345567890123");
+        assertTrue(library.getAllBooks().isEmpty());
+    }
+
+    @Test
+    public void testRemoveBookFailsWhenEmpty() {
+        library.removeBook("The SnowBall", "1234567890123"); // Remove first
+        RuntimeException thrown = assertThrows(RuntimeException.class, () -> {
+            library.removeBook("The SnowBall", "1234567890123");
+        });
+        assertEquals("Book does not exist", thrown.getMessage());
+    }
 
 
 
