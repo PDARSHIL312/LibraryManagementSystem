@@ -1,6 +1,8 @@
 package com.programming.Book;
 
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -180,6 +182,25 @@ class bookManagerTest {
             library.returnBook("The SnowBall" ,"2345567890123" ,"A123");
         });
     }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/BookData.csv")
+    public void testtoAddBookFromCsvFile(String entry)
+    {
+        Object[] parts = entry.split(",");
+        String title =(String)parts[0];
+        String author = (String)parts[1];
+        String publisher = (String)parts[2];
+        String isbn  =(String)parts[3];
+        int price = Integer.parseInt((String)parts[4]);
+        int pages = Integer.parseInt((String)parts[5]);
+        String language = (String)parts[6];
+//        Date publishedDate = (Date) parts[7];
+        boolean occupied = Boolean.parseBoolean((String)parts[8]);
+
+        library.addBook(title, author , publisher,isbn ,price ,pages ,language, new Date() ,occupied);
+        System.out.println(library.getAllBooks());
+  }
 
 
 
