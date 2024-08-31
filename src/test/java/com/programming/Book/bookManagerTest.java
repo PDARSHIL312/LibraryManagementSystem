@@ -50,7 +50,7 @@ class bookManagerTest {
         Calendar calendar = Calendar.getInstance();
         calendar.set(2003, Calendar.DECEMBER, 3);
         Date publishedDate = calendar.getTime();
-        library.addBook("The-SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", publishedDate, false);
+        library.addBook("The SnowBalls", "NoOne", "TATA", "2345567890123", 10, 231, "English", publishedDate, false);
 
     }
 }
