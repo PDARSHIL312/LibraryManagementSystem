@@ -100,19 +100,43 @@ public class book
         this.occupied = occupied;
     }
 
+    public void validate() {
+        if (title == null || title.isEmpty()) {
+            throw new IllegalArgumentException("Title cannot be null or empty");
+        }
+        if (author == null || author.isEmpty()) {
+            throw new IllegalArgumentException("Author cannot be null or empty");
+        }
+        if (publisher == null || publisher.isEmpty()) {
+            throw new IllegalArgumentException("Publisher cannot be null or empty");
+        }
+//        long isbndigit = Long.parseLong(this.isbn);
+        if (isbn == null || isbn.length() != 13 || !isbn.matches("\\d{13}")) {
+            throw new IllegalArgumentException("ISBN must be a 13-digit number without any letters");
+        }
+        if (price <= 0) {
+            throw new IllegalArgumentException("Price must be greater than zero");
+        }
+        if (pages <= 0) {
+            throw new IllegalArgumentException("Pages must be greater than zero");
+        }
+        if (language == null || language.isEmpty()) {
+            throw new IllegalArgumentException("Language cannot be null or empty");
+        }
+        if (publishedDate == null) {
+            throw new IllegalArgumentException("Published date cannot be null");
+        }
+        if (occupied != true && occupied != false) {
+            throw new IllegalArgumentException("Occupied must be a boolean value");
+        }
+    }
+
+    // Getters and setters omitted for brevity
+
     @Override
     public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", publisher='" + publisher + '\'' +
-                ", isbn='" + isbn + '\'' +
-                ", price=" + price +
-                ", pages=" + pages +
-                ", language='" + language + '\'' +
-                ", publishedDate=" + publishedDate +
-                ", occupied=" + occupied +
-                '}';
+        return String.format("Book{title='%s', author='%s', publisher='%s', isbn='%s', price=%d, pages=%d, language='%s', publishedDate=%s, occupied=%b}",
+                title, author, publisher, isbn, price, pages, language, publishedDate, occupied);
     }
 
 }

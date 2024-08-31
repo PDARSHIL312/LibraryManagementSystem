@@ -139,9 +139,48 @@ class bookManagerTest {
             library.addUser("U011", "Alice");
             library.borrowBook("The SnowBall" ,"2345567890123" , "U011" );
         });
-
-
     }
+    @Test
+    public  void testReturnBookFunctionalityCheckFirstThatbookExist()
+    {
+        library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", new Date(), false);
+        library.addUser("U01", "Alice");
+        library.borrowBook("The SnowBall" ,"2345567890123" , "U01" );
+        assertThrows(RuntimeException.class , () ->{
+            library.returnBook("RichDadPoorDad" ,"2345567890333" ,"U01");
+        });
+    }
+
+    @Test
+    public  void testReturnBookFunctionalityCheckFirstThatUserExist()
+    {
+        library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", new Date(), false);
+        System.out.println(library.getAllBooks());
+        library.addUser("U01", "Alice");
+//        library.addUser("A123" ,"DarshilPatel");
+        System.out.println(library.getAllUser());
+        library.borrowBook("The SnowBall" ,"2345567890123" , "U01" );
+        assertThrows(RuntimeException.class , () ->
+        {
+            library.returnBook("The SnowBall" ,"2345567890123" ,"A123");
+        });
+    }
+
+    @Test
+    public  void testReturnBookFunctionalityCheckReturnDoneByTheUserWhoBorrowedBook()
+    {
+        library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", new Date(), false);
+        System.out.println(library.getAllBooks());
+        library.addUser("U01", "Alice");
+        library.addUser("A123" ,"DarshilPatel");
+        System.out.println(library.getAllUser());
+        library.borrowBook("The SnowBall" ,"2345567890123" , "U01" );
+        assertThrows(RuntimeException.class , () ->
+        {
+            library.returnBook("The SnowBall" ,"2345567890123" ,"A123");
+        });
+    }
+
 
 
 
