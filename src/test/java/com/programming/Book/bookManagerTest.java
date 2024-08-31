@@ -34,7 +34,7 @@ class bookManagerTest {
 
     @Test
     public void checkThatEntryisDoneInBookDatailsORNot() {
-        // Ensure that a book is added before checking
+        // Ensure that a book is added before checking here
         Calendar calendar = Calendar.getInstance();
         calendar.set(2003, Calendar.DECEMBER, 3);
         Date publishedDate = calendar.getTime();
