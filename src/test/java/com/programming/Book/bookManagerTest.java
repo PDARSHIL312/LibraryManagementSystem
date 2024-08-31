@@ -19,7 +19,11 @@ class bookManagerTest {
 
     @BeforeEach
     public void setup() {
+//        library = new bookManager();
         library = new bookManager();
+//        library.addUser("U01", "Alice");
+//        library.addBook("The SnowBall", "Alice", "TATA", "1234567890123", 200, 350, "English", new Date(), false);
+
     }
 
     @Test
@@ -80,10 +84,7 @@ class bookManagerTest {
     @Test
     // this test is for if we want to remove book and that is available in the Map
     public void testRemoveBookSuccess() {
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(2003, Calendar.DECEMBER, 3);
-        Date publishedDate = calendar.getTime();
-        library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", publishedDate, false);
+        library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", new Date(), false);
 
         library.removeBook("The SnowBall", "2345567890123");
         assertTrue(library.getAllBooks().isEmpty());
@@ -96,6 +97,50 @@ class bookManagerTest {
             library.removeBook("The SnowBall", "1234567890123");
         });
         assertEquals("Book does not exist", thrown.getMessage());
+    }
+
+    @Test
+    // Testing the functionality of Add User and the Maping
+    public void testAddingUserFunctionalityIfItIsEmpty()
+    {
+        library.addUser("123-dar" ,"Darshil");
+        assertFalse(library.getAllUser().isEmpty());
+    }
+
+    @Test
+    public void testUserBorroowfunctionalityBookNotExist()
+    {
+        library.addBook("The SnowBallsss", "NoOne", "TATA", "2345567890123", 10, 231, "English", new Date(), false);
+        library.addUser("U01", "Alice");
+
+        assertThrows(RuntimeException.class , ()-> {
+            library.borrowBook("The SnowBall" ,"2345567890123" , "U01" );
+        });
+    }
+    @Test
+    public void testUserBorroowfunctionalityUserNotExist()
+    {
+        library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", new Date(), false);
+//        library.addUser("U01", "Alice");
+        assertThrows(RuntimeException.class ,()->{
+            library.borrowBook("The SnowBall" ,"2345567890123" , "U01111" );
+        });
+    }
+
+    @Test
+    public void testUserBorroowfunctionalityAlreadyBorrowed()
+    {
+        library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", new Date(), false);
+        library.addBook("The SnowBalls", "NoOne", "TATA", "2345567890133", 10, 231, "English", new Date(), false);
+        library.addUser("U01", "Alice");
+        library.borrowBook("The SnowBall" ,"2345567890123" , "U01" );
+
+        assertThrows(RuntimeException.class ,() ->{
+            library.addUser("U011", "Alice");
+            library.borrowBook("The SnowBall" ,"2345567890123" , "U011" );
+        });
+
+
     }
 
 
