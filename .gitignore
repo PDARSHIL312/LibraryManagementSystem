@@ -1,7 +1,9 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+
+# Ignore all of the target directory except surefire-reports
+target/*
+!target/surefire-reports/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml

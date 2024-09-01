@@ -203,13 +203,10 @@ class bookManagerTest {
         int price = Integer.parseInt((String)parts[4]);
         int pages = Integer.parseInt((String)parts[5]);
         String language = (String)parts[6];
-//        Date publishedDate = (Date) parts[7];
         boolean occupied = Boolean.parseBoolean((String)parts[8]);
 
         library.addBook(title, author , publisher,isbn ,price ,pages ,language, new Date() ,occupied);
         System.out.println(library.getAllBooks());
   }
-
-
 
 }

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.programming.Book.bookManagerTest" time="0.299" tests="53" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Admin\IdeaProject\LibraryManagementSystem\target\test-classes;C:\Users\Admin\IdeaProject\LibraryManagementSystem\target\classes;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Admin\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire1196661699141785104\surefirebooter-20240901122436513_3.jar C:\Users\Admin\AppData\Local\Temp\surefire1196661699141785104 2024-09-01T12-24-36_325-jvmRun1 surefire-20240901122436513_1tmp surefire_0-20240901122436513_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Admin\IdeaProject\LibraryManagementSystem\target\test-classes;C:\Users\Admin\IdeaProject\LibraryManagementSystem\target\classes;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Admin\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Admin\IdeaProject\LibraryManagementSystem"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire1196661699141785104\surefirebooter-20240901122436513_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.2+7-44"/>
+    <property name="user.name" value="Admin"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="19.0.2"/>
+    <property name="user.dir" value="C:\Users\Admin\IdeaProject\LibraryManagementSystem"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\7.0\bin;C:\Program Files\php-8.3.2;C:\Program Files\Git\cmd;C:\Program Files\Java\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\Admin\anaconda3;C:\Users\Admin\anaconda3\Library\mingw-w64\bin;C:\Users\Admin\anaconda3\Library\usr\bin;C:\Users\Admin\anaconda3\Library\bin;C:\Users\Admin\anaconda3\Scripts;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\bin;;C:\Myjava;C:\MinGW\bin;C:\msys64\mingw64\bin;C:\Users\Admin\AppData\Local\GitHubDesktop\bin;C:\Users\Admin\AppData\Roaming\npm;C:\Program Files\MongoDB\mongosh-1.10.6-win32-x64\bin;C:\Users\Admin\AppData\Local\Programs\mongosh\;C:\Program Files\MongoDB\Server\7.0\bin;C:\Program Files\php-8.3.2;;C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19.0.2+7-44"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="checkIfBookIsAlreadyAdded" classname="com.programming.Book.bookManagerTest" time="0.031">
+    <system-out><![CDATA[This will run before the execution of all the test methods.
+]]></system-out>
+  </testcase>
+  <testcase name="testRemoveBookSuccess" classname="com.programming.Book.bookManagerTest" time="0.0"/>
+  <testcase name="testReturnBookFunctionalityCheckFirstThatbookExist" classname="com.programming.Book.bookManagerTest" time="0.016">
+    <system-out><![CDATA[Book borrowed successfully by user: U01
+]]></system-out>
+  </testcase>
+  <testcase name="checkThatEntryisDoneInBookDatailsORNot" classname="com.programming.Book.bookManagerTest" time="0.016">
+    <system-out><![CDATA[[Book{title='The SnowBall', author='NoOne', publisher='TATA', isbn='2345567890123', price=10, pages=231, language='English', publishedDate=Wed Dec 03 12:24:37 IST 2003, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testReturnBookFunctionalityCheckFirstThatUserExist" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The SnowBall', author='NoOne', publisher='TATA', isbn='2345567890123', price=10, pages=231, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+[User{id='U01', name='Alice'}]
+Book borrowed successfully by user: U01
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[1]" classname="com.programming.Book.bookManagerTest" time="0.031">
+    <system-out><![CDATA[[Book{title='The Great Adventure', author='John Smith', publisher='Penguin', isbn='9876543210987', price=15, pages=340, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[2]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Lost World', author='Arthur Conan Doyle', publisher='HarperCollins', isbn='1234567890123', price=20, pages=420, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[3]" classname="com.programming.Book.bookManagerTest" time="0.015">
+    <system-out><![CDATA[[Book{title='The Mystery Island', author='Jules Verne', publisher='Random House', isbn='3456789012345', price=25, pages=210, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[4]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Golden Compass', author='Philip Pullman', publisher='Scholastic', isbn='4567890123456', price=30, pages=500, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[5]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Secret Garden', author='Frances Hodgson Burnett', publisher='Bantam', isbn='5678901234567', price=35, pages=350, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[6]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Silent Patient', author='Alex Michaelides', publisher='Orion', isbn='6789012345678', price=40, pages=330, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[7]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Night Circus', author='Erin Morgenstern', publisher='Anchor', isbn='7890123456789', price=45, pages=400, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[8]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Time Machine', author='H.G. Wells', publisher='Macmillan', isbn='8901234567890', price=50, pages=150, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[9]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Hobbit', author='J.R.R. Tolkien', publisher='HarperCollins', isbn='9012345678901', price=55, pages=310, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[10]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Da Vinci Code', author='Dan Brown', publisher='Knopf Doubleday', isbn='2233445566778', price=65, pages=430, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[11]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Road', author='Cormac McCarthy', publisher='Vintage', isbn='3344556677889', price=70, pages=287, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[12]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Kite Runner', author='Khaled Hosseini', publisher='Bloomsbury', isbn='4455667788990', price=75, pages=372, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[13]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Alchemist', author='Paulo Coelho', publisher='HarperOne', isbn='5566778899001', price=80, pages=198, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[14]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Little Prince', author='Antoine de Saint-Exupéry', publisher='Egmont', isbn='6677889900112', price=85, pages=96, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[15]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Fault in Our Stars', author='John Green', publisher='Dutton Books', isbn='7788990011223', price=90, pages=313, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[16]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Maze Runner', author='James Dashner', publisher='Delacorte Press', isbn='8899001122334', price=95, pages=375, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[17]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Hunger Games', author='Suzanne Collins', publisher='Scholastic', isbn='9900112233445', price=100, pages=374, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[18]" classname="com.programming.Book.bookManagerTest" time="0.016">
+    <system-out><![CDATA[[Book{title='The Girl on the Train', author='Paula Hawkins', publisher='Riverhead Books', isbn='1011122233445', price=105, pages=395, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[19]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Handmaid's Tale', author='Margaret Atwood', publisher='McClelland & Stewart', isbn='1213141516171', price=110, pages=311, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[20]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Book Thief', author='Markus Zusak', publisher='Picador', isbn='1314151617181', price=115, pages=584, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[21]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Chronicles of Narnia', author='C.S. Lewis', publisher='HarperCollins', isbn='1415161718191', price=120, pages=768, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[22]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Lightning Thief', author='Rick Riordan', publisher='Disney Hyperion', isbn='1516171819202', price=125, pages=377, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[23]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Stand', author='Stephen King', publisher='Doubleday', isbn='1617181920213', price=130, pages=823, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[24]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Shining', author='Stephen King', publisher='Knopf Doubleday', isbn='1718192021224', price=135, pages=447, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[25]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Outsiders', author='S.E. Hinton', publisher='Penguin', isbn='1819202122235', price=140, pages=192, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[26]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Bell Jar', author='Sylvia Plath', publisher='Harper & Row', isbn='2021222324257', price=150, pages=296, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[27]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Old Man and the Sea', author='Ernest Hemingway', publisher='Scribner', isbn='2122232425268', price=155, pages=127, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[28]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Grapes of Wrath', author='John Steinbeck', publisher='Viking Press', isbn='2223242526279', price=160, pages=464, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[29]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Adventures of Sherlock Holmes', author='Arthur Conan Doyle', publisher='George Newnes', isbn='2324252627281', price=165, pages=307, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[30]" classname="com.programming.Book.bookManagerTest" time="0.016">
+    <system-out><![CDATA[[Book{title='The Great Gatsby', author='F. Scott Fitzgerald', publisher='Scribner', isbn='2425262728292', price=170, pages=218, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[31]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Hobbit', author='J.R.R. Tolkien', publisher='George Allen & Unwin', isbn='2728293031325', price=185, pages=304, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[32]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Road', author='Cormac McCarthy', publisher='Alfred A. Knopf', isbn='2829303132336', price=190, pages=287, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[33]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Alchemist', author='Paulo Coelho', publisher='HarperCollins', isbn='2930313233347', price=195, pages=182, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[34]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Time Traveler's Wife', author='Audrey Niffenegger', publisher='Zola Books', isbn='3031323334358', price=200, pages=546, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[35]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Notebook', author='Nicholas Sparks', publisher='Warner Books', isbn='3132333435369', price=205, pages=214, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[36]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Secret Garden', author='Frances Hodgson Burnett', publisher='Heinemann', isbn='3233343536370', price=210, pages=331, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[37]" classname="com.programming.Book.bookManagerTest" time="0.016">
+    <system-out><![CDATA[[Book{title='The Pillars of the Earth', author='Ken Follett', publisher='Macmillan', isbn='3334353637381', price=215, pages=973, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[38]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Girl with the Dragon Tattoo', author='Stieg Larsson', publisher='Norstedts Förlag', isbn='3435363738392', price=220, pages=465, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[39]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Help', author='Kathryn Stockett', publisher='Amy Einhorn Books', isbn='3637383940414', price=230, pages=451, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testtoAddBookFromCsvFile(String)[40]" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The Catch-22', author='Joseph Heller', publisher='Simon & Schuster', isbn='3839404142436', price=240, pages=453, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+]]></system-out>
+  </testcase>
+  <testcase name="testReturnBookFunctionalityCheckReturnDoneByTheUserWhoBorrowedBook" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[[Book{title='The SnowBall', author='NoOne', publisher='TATA', isbn='2345567890123', price=10, pages=231, language='English', publishedDate=Sun Sep 01 12:24:37 IST 2024, occupied=false}]
+[User{id='U01', name='Alice'}, User{id='A123', name='DarshilPatel'}]
+Book borrowed successfully by user: U01
+]]></system-out>
+  </testcase>
+  <testcase name="testAddingUserFunctionalityIfItIsEmpty" classname="com.programming.Book.bookManagerTest" time="0.005"/>
+  <testcase name="testUserBorroowfunctionalityBookNotExist" classname="com.programming.Book.bookManagerTest" time="0.0"/>
+  <testcase name="checkThatBookCanAddOrNot" classname="com.programming.Book.bookManagerTest" time="0.0"/>
+  <testcase name="testRemoveBookFailsWhenEmpty" classname="com.programming.Book.bookManagerTest" time="0.0"/>
+  <testcase name="testUserBorroowfunctionalityAlreadyBorrowed" classname="com.programming.Book.bookManagerTest" time="0.0">
+    <system-out><![CDATA[Book borrowed successfully by user: U01
+]]></system-out>
+  </testcase>
+  <testcase name="checkThatEntryDoneHavingAnyNullOrNotAndTheValidtion" classname="com.programming.Book.bookManagerTest" time="0.0"/>
+  <testcase name="testUserBorroowfunctionalityUserNotExist" classname="com.programming.Book.bookManagerTest" time="0.0"/>
+</testsuite>
