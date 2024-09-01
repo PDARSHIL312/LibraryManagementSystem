@@ -4,7 +4,7 @@ This project is a Java-based Library Management System developed with a focus on
 
 ## 🛠️ Project Setup
 
-- **Java Version:** 17
+- **Java Version:** 21
 - **Maven:** 3.8.4
 - **JUnit:** 5.9.0
 
