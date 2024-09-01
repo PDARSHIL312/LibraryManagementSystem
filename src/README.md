@@ -115,7 +115,6 @@ git commit -m "Add new functionality to borrow books"
 Pushing Changes to the Remote Repository
 Push your changes to the GitHub repository:
 
-
 bash
 Copy code
 git push origin feature/add-new-functionality
