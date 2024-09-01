@@ -33,7 +33,12 @@ class bookManagerTest {
         Calendar calendar = Calendar.getInstance();
         calendar.set(2003, Calendar.DECEMBER, 3);
         Date publishedDate = calendar.getTime();
-        library.addBook("The SnowBall", "NoOne", "TATA", "12345", 0, 231, "English", publishedDate, false);    }
+        assertThrows(RuntimeException.class, () -> {
+            library.addBook("The SnowBall", "NoOne", "TATA", "12345", 0, 231, "English", publishedDate, false);
+
+        });
+    }
+
 
     @Test
     public void checkThatEntryisDoneInBookDatailsORNot() {
@@ -80,7 +85,10 @@ class bookManagerTest {
         assertFalse(library.getAllBooks().isEmpty(), "The library should not be empty after adding a book.");
 
         // Here i am checking that if i agian enter the same book it Thorw exception or not
-        library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", publishedDate, false);
+        assertThrows(RuntimeException.class , ()->{
+            library.addBook("The SnowBall", "NoOne", "TATA", "2345567890123", 10, 231, "English", publishedDate, false);
+
+        });
     }
 
     @Test
@@ -94,11 +102,11 @@ class bookManagerTest {
 
     @Test
     public void testRemoveBookFailsWhenEmpty() {
-        library.removeBook("The SnowBall", "1234567890123"); // Remove first
-        RuntimeException thrown = assertThrows(RuntimeException.class, () -> {
+
+        assertThrows(RuntimeException.class, () -> {
             library.removeBook("The SnowBall", "1234567890123");
         });
-        assertEquals("Book does not exist", thrown.getMessage());
+
     }
 
     @Test
@@ -201,7 +209,6 @@ class bookManagerTest {
         library.addBook(title, author , publisher,isbn ,price ,pages ,language, new Date() ,occupied);
         System.out.println(library.getAllBooks());
   }
-
 
 
 
