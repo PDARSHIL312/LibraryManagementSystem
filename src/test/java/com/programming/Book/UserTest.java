@@ -58,7 +58,7 @@ class UserTest {
 
     @ParameterizedTest
     @CsvFileSource(resources = "/user.csv" )
-    public void testUserCreationWithNullUserIds(String entries) {
+    public void testUserCreationWithNullUserIds(String entries ) {
         // Create a User object with the CSV data
 
         String[] parts = entries.split(",");
