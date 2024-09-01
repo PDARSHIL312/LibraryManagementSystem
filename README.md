@@ -22,6 +22,7 @@ Java (version 17): Core language for the application.
 Maven: Project management and build tool.
 JUnit 5: Used for writing and running unit tests.
 Surefire Plugin: Generates test reports for JUnit tests.
+
 📂 Project Structure
 css
 Copy code
@@ -95,7 +96,7 @@ Here’s an example of a test case that ensures only the user who borrowed the b
 java
 Copy code
 assertThrows(RuntimeException.class , () -> {
-    library.returnBook("The SnowBall", "2345567890123", "A123");
+library.returnBook("The SnowBall", "2345567890123", "A123");
 });
 📂 Version Control & Git Commands
 Creating a New Branch for Feature Development
@@ -124,5 +125,6 @@ bash
 Copy code
 git checkout main
 git merge feature/add-new-functionality
+
 🎉 Conclusion
 This Library Management System provides a robust way to manage books and users, ensuring that only the right users can borrow and return books. It incorporates validation at each step, ensuring data integrity and correctness.
